@@ -11,7 +11,7 @@ const questionSlice = createSlice({
       return (state = [...state, action.payload]);
     },
     loadQuestions: (state) => {
-      return [...state, QUESTIONS];
+      return [...state, ...QUESTIONS];
     },
   },
 });
